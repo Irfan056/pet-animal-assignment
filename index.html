@@ -27,43 +27,44 @@
 <body>
     <header>
         <section class="bg-[#FFF9F4]">
-            <nav class="max-w-[1320px] m-auto flex justify-between pb-16 items-center pt-4">
+            <nav class="md:max-w-[1320px] m-auto flex justify-between pb-16 items-center pt-4">
                 <div class="flex gap-2">
                     <img src="c1-assets/logo-header.png" alt="">
-                    <h3 class="font-bold text-[26px]">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+                    <ul class="flex gap-5 max-sm:hidden">
+                        <h3 class="font-bold text-[26px]  ">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
                 </div>
                 <div>
-                    <ul class="flex gap-5">
+                    <ul class="flex gap-5 max-sm:hidden">
                         <li>Find a pet</li>
                         <li>Breeds</li>
                         <li>Contact us</li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-5">
+                <div class="flex items-center gap-5 max-sm:hidden">
                     <i class="fa-regular fa-bell"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <button class="btn">Button</button>
                     <button class="btn btn-warning">Register</button>
                 </div>
+                <i class="fa-solid fa-bars sm:hidden mx-auto"></i>
             </nav>
+
         </section>
         <!-- banner -->
-        <section class=" max-w-[1320px] m-auto">
-            <div class="space-y-5">
-                <h2 class="font-bold text-[56px]">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h2>
-                <p class="text-[#777777] pb-3">Discover a world of treats, toys, and essentials handpicked for <br> your
-                    furry friends. Shop now and make
-                    tails wag with joy!</p>
-                <button class="btn btn-warning">Find Job</button>
-            </div>
-            <div>
-                <img src="c1-assets/cat-big.png" alt="">
+        <section class="max-w-fit mx-auto">
+            <div class="space-y-8">
+                <h2 class="font-semibold text-6xl animate-bounce max-sm:mt-16">Pamper Your Pet, <br> Because They
+                    Deserve <br> the Bes</h2>
+                <p class="font-normal text-xl">Discover a world of treats, toys, and essentials handpicked for <br> your
+                    furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn btn-warning">Find a pet</button>
+                <img class="relative" src="c1-assets/cat-big.png" alt="">
             </div>
         </section>
     </header>
     <main>
         <!-- Browse section -->
-        <section class="my-32 max-w-[1320px] m-auto">
+        <section class="my-32 md:max-w-[1320px] m-auto">
             <h2 class="text-3xl font-bold mt-5">Browse By Categories</h2>
             <!-- card -->
             <div class="flex justify-between">
@@ -136,11 +137,167 @@
             </div>
         </section>
         <!-- pet products -->
-        <section class="max-w-[1320px] m-auto">
+        <section class="bg-[#FFF9F4]">
+            <section class=" pb-20
+                      max-sm:p-4 my-32 max-w-[1320px] m-auto">
+                <h5 class="pt-6 my-36 md:container mx-auto  font-semibold text-4xl mb-12">Popular Products</h5>
+                <div class="container md:container mx-auto grid grid-cols-4 grid-rows-3 md:gap-8 gap-3
+                    max-sm:grid-cols-2 max-sm:grid-rows-5">
+
+                    <!--card-1-->
+                    <div class="rounded-2xl bg-[#F9DF8A] max-sm:col-span-2 row-span-3 pt-7 pl-7">
+                        <h4 class=" font-semibold text-2xl">T-Shirt For Dogs</h4>
+                        <p class="mt-4 font-light">Discover a world of treats,toy and <br>essentials handpicked for</p>
+                        <button class="mt-4 btn btn-primary text-black bg-white border-none hover:bg-green-500">Shop
+                            Now</button>
+                        <img class="relative -top-20 left-12 md:-bottom-6" src="c1-assets/cute-pet-small.png" alt="">
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/dog-cartoon.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Onion 1 KG</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+
+                    <!-- card-3 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl " src="c1-assets/fish-cartoon.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Tomato 500 g</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+                    <!-- card-4 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/bird-cartoon.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Potato 1 KG</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+                    <!-- card-5 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/rabbit-cartoon.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Tomato 500 g</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+                    <!-- card-6 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/bird-cartoon.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Onion 1 KG</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+                    <!-- card-7 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/pet-couch.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Tomato 500 g</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+                    <!-- card-8 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/fish-cartoon.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Onion 1 KG</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+                    <!-- card-9 -->
+                    <div class="flex gap-6 p-4 pr-9 rounded-2xl bg-white max-sm:items-center">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/pet-couch.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Potato 1 KG</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+
+                    <!-- card-10 -->
+                    <div class="max-sm:hidden flex gap-6 p-4 pr-9 rounded-2xl bg-white">
+                        <div>
+                            <img class="rounded-xl" src="c1-assets/rabbit-cartoon.png" alt="">
+                        </div>
+                        <div>
+                            <p><i class="text-yellow-400 fa-solid fa-star"></i> 4.5</p>
+                            <h4 class="font-medium text-xl">Potato 1 KG</h4>
+                            <h6 class="font-medium text-base">$39.99</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
         </section>
+        <!-- maintain their condition -->
+        <section class=" lg:max-w-[1320px] gap-10  grid lg:grid-cols-3 max-sm:grid-cols-1 mx-auto my-10">
+            <div class="shadow-xl bg-yellow-900 rounded-2xl py-4 px-4">
+                <h2 class="font-bold text-2xl text-white">Attention!!!</h2>
+                <p class="text-white">It is often said that cats do not have owners but butlers, and sometimes it can
+                    feel like that! To
+                    get a little insight into what life with a cat might be like, we invite you to take up the 30-day
+                </p>
+                <img src="c1-assets/cute-dog-mid.png" alt="">
+            </div>
+            <div class="shadow-xl bg-green-800 rounded-2xl py-4 px-4">
+                <h2 class="font-bold text-2xl  text-white">Attention!!!!</h2>
+                <p class=" text-white">Dog care involves grooming, training, veterinary care, diet, exercise, and
+                    vaccinations. It's
+                    important to provide your dog with everything they need to be happy and healthy.
+                </p>
+                <img src="c1-assets/cute-pet-mid.png" alt="">
+            </div>
+            <div class="shadow-xl bg-teal-700 rounded-2xl py-4 px-4">
+                <h2 class="font-bold text-2xl text-white">Attention!!!!</h2>
+                <p class="text-white">Rabbits need a lot of space to exercise, plenty of fresh hay and lovely green leaf
+                    treats. A fresh source of water is critical, and they adore plenty of cuddles and fun playtime too.
+                </p>
+                <img src="c1-assets/rabbit-png-40321.png" alt="">
+            </div>
+
+        </section>
+
+
         <!-- Everyday low price section -->
-        <section class="max-w-[1320px] m-auto">
+        <section class="md:max-w-[1320px] mx-auto">
             <h2 class="font-bold text-4xl">Everyday low Price</h2>
             <div class="flex w-full gap-5 my-20">
                 <div
@@ -167,6 +324,24 @@
         </section>
     </main>
     <footer>
+
+        <section class="md:container mx-auto bg-[#FFF9F4] rounded-2xl p-20 max-sm:mx-3
+                      relative top-52 mb-20">
+            <div class=" md:grid md:grid-cols-2 md:items-center justify-items-center">
+                <div>
+                    <img src="c1-assets/cute-pet-mid.png" alt="">
+                </div>
+                <div class="space-y-8 max-sm:pb-7">
+                    <h4 class="font-semibold text-4xl">Get Pawsome News!</h4>
+                    <p class="font-normal text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="email" placeholder="Enter email...." class=" pl-7 w-96 h-14 rounded-lg"><br>
+                    <button
+                        class="btn bg-[#FFDC26] max-sm:absolute max-sm:left-1/2 max-sm:-translate-x-1/2 max-sm:">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+
         <!-- footer -->
         <section class="bg-[#f2e189] pt-32">
             <div class="max-w-[1320px] m-auto flex justify-between items-center">
